@@ -1,0 +1,9 @@
+from django.urls import path
+
+from library_manager.views import DetailView, ListView
+
+app_name = "lib_mngr"
+urlpatterns = [
+    path("<str:entity>/list/", ListView.as_view(), name="list"),
+    path("<str:entity>/detail/<int:identifier>/", DetailView.as_view(), name="detail"),
+]
