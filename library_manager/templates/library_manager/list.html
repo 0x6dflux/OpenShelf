@@ -21,11 +21,11 @@
   <tbody class="table-group-divider">
     {% for index, obj in data %}
     <tr>
-      <th scope="row">index</th>
-      <td>obj.title</td>
-      <td>obj.published_date</td>
-      <td>obj.isbn</td>
-      <td>obj.authors</td>
+      <th scope="row">{{ index }}</th>
+      <td>{{ obj.title }}</td>
+      <td>{{ obj.published_date }}</td>
+      <td>{{ obj.isbn }}</td>
+      <td>{{ obj.author_set }}</td>
     </tr>
     {% endfor %}
   </tbody>
@@ -47,12 +47,12 @@
   <tbody class="table-group-divider">
     {% for index, obj in data %}
     <tr>
-      <th scope="row">index</th>
-      <td>obj.first_name</td>
-      <td>obj.last_name</td>
-      <td>obj.age</td>
-      <td>obj.book_set</td>
-      <td>obj.book_set.count()</td>
+      <th scope="row">{{ index }}</th>
+      <td>{{ obj.first_name }}</td>
+      <td>{{ obj.last_name }}</td>
+      <td>{{ obj.age }}</td>
+      <td>{{ obj.book_set }}</td>
+      <td>{{ obj.book_set.count }}</td>
     </tr>
     {% endfor %}
   </tbody>
