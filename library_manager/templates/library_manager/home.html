@@ -4,23 +4,23 @@
 
 {% block body %}
 <div class="container d-flex flex-row align-items-center">
-    <div class='container my-5 py-5 bg-light bg-opacity-25 shadow-lg border border-light border-opacity-25 rounded-5'>
+    <div class='container my-5 py-5 bg-light bg-opacity-50 shadow border border-light rounded-5'>
         <h1 class="text-primary"><u><a href='{% url "lib_mngr:home" %}'>OpenShelf</a></u></h1>
-        <h6>Where You Can Manage BOOKs and AUTHORs</h6>
+        <h6>Manage Books and Authors</h6>
     </div>
 
     <div class="container w-50 d-flex flex-column">
         <a href="{% url 'lib_mngr:list' entity='book' %}"
-            class='p-2 m-1 bg-light bg-opacity-25 shadow-lg border border-opacity-25 border-light rounded-4 link-primary link-opacity-25-hover link-underline-opacity-0'>Show
+            class='p-1 m-2 bg-light bg-opacity-50 shadow border border-light rounded-4 link-dark link-opacity-25-hover link-underline-opacity-0'>Show
             Books</a>
         <a href="{% url 'lib_mngr:list' entity='author' %}"
-            class='p-2 m-1 bg-light bg-opacity-25 shadow-lg border border-opacity-25 border-light rounded-4 link-primary link-opacity-25-hover link-underline-opacity-0'>Show
+            class='p-1 m-2 bg-light bg-opacity-50 shadow border border-light rounded-4 link-dark link-opacity-25-hover link-underline-opacity-0'>Show
             Authors</a>
         <a href="{% url 'lib_mngr:add' entity='book' %}"
-            class='p-2 m-1 bg-light bg-opacity-25 shadow-lg border border-opacity-25 border-light rounded-4 link-primary link-opacity-25-hover link-underline-opacity-0'>Add
+            class='p-1 m-2 bg-light bg-opacity-50 shadow border border-light rounded-4 link-dark link-opacity-25-hover link-underline-opacity-0'>Add
             Book</a>
         <a href="{% url 'lib_mngr:add' entity='author' %}"
-            class='p-2 m-1 bg-light bg-opacity-25 shadow-lg border border-opacity-25 border-light rounded-4 link-primary link-opacity-25-hover link-underline-opacity-0'>Add
+            class='p-1 m-2 bg-light bg-opacity-50 shadow border border-light rounded-4 link-dark link-opacity-25-hover link-underline-opacity-0'>Add
             Author</a>
     </div>
 </div>

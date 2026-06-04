@@ -24,8 +24,8 @@ class ListView(View):
                 "ISBN",
                 "Authors",
             )
-            print("*** book.objects", list(enumerate(Book.objects.all(), start=1)))
-            context["data"] = enumerate(Book.objects.all())
+            # print("*** book.objects", tuple(enumerate(Book.objects.all(), start=1)))
+            context["data"] = enumerate(Book.objects.all(), start=1)
         elif entity == "author":
             context["header"] = (
                 "First Name",
@@ -34,7 +34,7 @@ class ListView(View):
                 "Books",
                 "# of Books",
             )
-            print("*** author.objects", list(enumerate(Author.objects.all(), start=1)))
-            context["data"] = enumerate(Author.objects.all())
+            # print("*** author.objects", tuple(enumerate(Author.objects.all(), start=1)))
+            context["data"] = enumerate(Author.objects.all(), start=1)
 
         return render(request, "library_manager/list.html", context)
